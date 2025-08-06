@@ -17,7 +17,7 @@ align-items: center;
 
 .principal{
 position: relative;
-width: 600px;
+width: 580px;
 height: 850px;
 background: linear-gradient(to bottom, red 0%,
 red 38%,
@@ -50,8 +50,8 @@ h1{
 
 .imagen{
 
-    width: 350px;
-    height: 350px;
+    width: 330px;
+    height: 330px;
     border-radius: 50%;
     background-color: white;
     position: absolute;
@@ -64,13 +64,14 @@ h1{
     justify-content: center;
 }
 #imagenBola{
-width: 320px;
-height: 320px;
+width: 250px;
+height: 250px;
 object-fit: contain;
 
 
 
 }
+
 
 .relleno{
 
@@ -85,12 +86,14 @@ object-fit: contain;
     height: 10%;
     display: flex;
     justify-content: center;
-  
+    text-align: center;
+    padding:10px;
+    
 }
 
 h2{
 font-size: 40px;
-text-shadow: 6px 4px 5px rgb(129, 126, 126);
+text-shadow: 5px 4px 3px rgb(100, 100, 100)
 }
 
 .menu{
@@ -100,6 +103,7 @@ text-shadow: 6px 4px 5px rgb(129, 126, 126);
     flex-direction: row;
     
     
+    
 }
 
 .user{
@@ -107,8 +111,10 @@ text-shadow: 6px 4px 5px rgb(129, 126, 126);
     height: 100%;
     display: flex;
     justify-content: end;
-    align-items: center;
-
+    align-items: start;
+flex-direction: column;
+    position: relative;
+    padding-left: 10px;
     position: relative;
 
 }
@@ -123,11 +129,23 @@ text-shadow: 6px 4px 5px rgb(129, 126, 126);
     height: 30%;
     padding: 10px;
     border-radius: 20px;
-    background-color: rgb(189, 182, 182);
+    background-color: rgb(185, 189, 182);
     cursor: pointer;
     font-size: 20px;
     box-shadow: 7.5px 4px 5px rgb(92, 91, 91);
 
+}
+
+.Puntos{
+    width: 90%;
+    height: 18%;
+    align-items: start;
+    font-size: 30px;
+    position: absolute;
+    bottom: 60px;
+    left: 25px;
+    text-shadow: 5px 4px 3px rgb(100, 100, 100)
+    
 }
 
 .botones{
@@ -168,4 +186,40 @@ text-shadow: 6px 4px 5px rgb(129, 126, 126);
 
     background-color: gold;
     transform: scale(1.1);
+}
+
+@media(max-width: 480px){
+
+
+.principal{
+    width: 92%;
+    height: 85%;
+}
+
+
+
+.imagen{
+
+    width: 250px;
+    height: 250px;
+    
+}
+#imagenBola{
+width: 200px;
+height: 200px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
 }
