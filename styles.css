@@ -45,7 +45,8 @@ box-shadow: 12px 10px 10px black;
 h1{
     font-size: 60px;
     color: gold;
-    text-shadow: 7.5px 6px 4px black;
+    text-shadow: 7.5px 6px 10px black;
+    filter: drop-shadow(0 0 0px rgb(0, 0, 0));
 }
 
 .imagen{
@@ -62,11 +63,13 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    filter: drop-shadow(3px 4px 10px rgb(0, 0, 0)) 
 }
 #imagenBola{
 width: 250px;
 height: 250px;
 object-fit: contain;
+
 
 
 
@@ -87,13 +90,92 @@ object-fit: contain;
     display: flex;
     justify-content: center;
     text-align: center;
-    padding:10px;
+    
+    position: relative;
+    
+    
+    
     
 }
+.superclase {
+  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  
+}
+
+
+.segundaSuperClase {
+  
+  width: 100%;
+  font-size: 40px;
+  text-shadow: 5px 4px 3px rgba(0, 0, 0, 1);
+  filter: drop-shadow(0 0 0px rgb(0, 0, 0));
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding-left: 60px;
+  
+}
+
 
 h2{
+    width: 100%;
 font-size: 40px;
-text-shadow: 5px 4px 3px rgb(100, 100, 100)
+text-shadow: 5px 4px 4px rgb(121, 118, 118);
+ 
+ position: relative;
+
+
+
+}
+
+.estrellita{
+    width: 70px;
+    height: 70px;
+    
+   position: absolute;
+    left:81%;
+    bottom: 28px;
+    filter: drop-shadow(3px 4px 3px rgb(0, 0, 0))
+            
+}
+.claseMono{
+
+    width: 70px;
+    height: 70px;
+    
+   position: absolute;
+    left:78%;
+    bottom: 25px;
+    filter: drop-shadow(3px 4px 3px rgb(0, 0, 0))
+
+}
+
+.clasePika{
+
+   width: 70px;
+    height: 70px;
+    
+   position: absolute;
+    left:81%;
+    bottom: 37px;
+    filter: drop-shadow(3px 4px 3px rgb(0, 0, 0)) 
+}
+
+.clasePuff{
+
+    width: 75px;
+    height: 75px;
+    
+   position: absolute;
+    left:82%;
+    bottom: 24px;
+    filter: drop-shadow(3px 4px 3px rgb(0, 0, 0))
 }
 
 .menu{
@@ -132,7 +214,7 @@ flex-direction: column;
     background-color: rgb(185, 189, 182);
     cursor: pointer;
     font-size: 20px;
-    box-shadow: 7.5px 4px 5px rgb(92, 91, 91);
+    box-shadow: 7.5px 4px 10px rgb(92, 91, 91);
 
 }
 
@@ -167,7 +249,7 @@ flex-direction: column;
     border: none;
     transition: all 0.3s ease-in-out;
     font-size: 20px;
-    box-shadow: 7.5px 4px 5px rgb(92, 91, 91);
+    box-shadow: 7.5px 4px 10px rgb(92, 91, 91);
 }
 
 .replay{
@@ -179,7 +261,7 @@ flex-direction: column;
     border: none; 
     transition: all 0.3s ease-in-out;
     font-size: 20px;
-    box-shadow: 7.5px 4px 5px rgb(92, 91, 91);
+    box-shadow: 7.5px 4px 10px rgb(92, 91, 91);
 }
 
 .enviar:hover, .replay:hover{
