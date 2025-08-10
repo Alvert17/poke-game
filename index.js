@@ -96,7 +96,7 @@ botonJuego.addEventListener("click", () => {
     
     entrada.value = "";
     
-fetch(`https://pokeapi.co/api/v2/pokemon/${Math.floor(Math.random()*100)}`)
+fetch(`https://pokeapi.co/api/v2/pokemon/${Math.floor(Math.random()*60)}`)
 .then(respuesta => respuesta.json())
 .then((objeto) => {
  
